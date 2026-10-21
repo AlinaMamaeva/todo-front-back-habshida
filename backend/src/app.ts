@@ -22,7 +22,7 @@ const io = new Server(server, {
     origin: [
       "http://localhost:5173",
       "https://todo-front-back-habshida.vercel.app",
-      "https://todo-front-back-habshida-2cubqnq3b-alinamamaevas-projects.vercel.app",
+    /^https:\/\/todo-front-back-habshida-[a-z0-9]+-alinamamaevas-projects\.vercel\.app$/,
     ],
     methods: ["GET", "POST"],
   },
