@@ -19,7 +19,11 @@ const server = http.createServer(app);
 // Connect Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://todo-front-back-habshida.vercel.app",
+    ],
+    methods: ["GET", "POST"],
   },
 });
 
