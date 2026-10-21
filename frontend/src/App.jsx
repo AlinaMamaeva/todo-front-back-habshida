@@ -21,6 +21,7 @@ function App() {
       console.log("Socket connected:", socket.id);
 
       socket.emit("workspace:join", {
+        workspace: "default",
         username: "Guest",
       });
     });
